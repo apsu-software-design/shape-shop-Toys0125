@@ -1,7 +1,7 @@
 "use strict";
 //User Interface for The Shopping Cart 
 //@author James Church
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.start = void 0;
 var readlineSync = require("readline-sync"); //for easier repeated prompts
 var products_1 = require("./products");
@@ -73,7 +73,6 @@ function letUserSelectQuantity() {
 function removeItemFromCart() {
     console.log("Select an item to be removed from the cart.\n  ");
     for (var i = 0; i < shopping_cart.length; i++) {
-        console.log("");
         console.log(i + ": " + shopping_cart[i].getName());
     }
     var response = readlineSync.question('> ');
